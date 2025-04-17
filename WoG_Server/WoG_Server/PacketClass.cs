@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Runtime.InteropServices;
+
+namespace WoG_Server
+{
+    [StructLayout(LayoutKind.Sequential)]
+    [Serializable]
+    class PacketClass
+    {
+        [MarshalAs(UnmanagedType.U4)]
+        public int _protocolID;
+        [MarshalAs(UnmanagedType.U4)]
+        public int _totalSize;
+        [MarshalAs(UnmanagedType.U8)]
+        public long _clientID;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1008)]
+        public byte[] _data;
+
+        public void modData(int id, long clientID, int size, byte[] data)
+        {
+            _protocolID = id;
+            _clientID = clientID;
+            _totalSize = size;
+            _data = data;
+        }
+    }
+}

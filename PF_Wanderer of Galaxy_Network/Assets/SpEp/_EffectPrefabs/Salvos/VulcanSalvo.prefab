@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1858357645904334}
+  m_IsPrefabParent: 1
+--- !u!1 &1858357645904334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4385330449090266}
+  - component: {fileID: 114054251647245948}
+  - component: {fileID: 114590469298203850}
+  m_Layer: 0
+  m_Name: VulcanSalvo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4385330449090266
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858357645904334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.91, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114054251647245948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858357645904334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc54bf69696cbff468f29baba8084538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createThese:
+  - {fileID: 1632257066296926, guid: f41a239aab2a9ff4e8b4869638cd70dd, type: 2}
+  createTimeIntervals: 0.05
+  stopAfter: 0.3
+  parentUnderCreator: 0
+  x_rnd: 0
+  y_rnd: 0
+  z_rnd: 0
+  x_rot_rnd: 0
+  y_rot_rnd: 0
+  z_rot_rnd: 0
+--- !u!114 &114590469298203850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858357645904334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817957b62d6328f42a9c43ba278baae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 5

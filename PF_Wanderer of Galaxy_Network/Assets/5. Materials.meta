@@ -1,0 +1,8 @@
+using System;
+using UnityEngine.Purchasing.Models;
+using UnityEngine.Scripting;
+
+namespace UnityEngine.Purchasing
+{
+    /// <summary>
+    /// This is C# representation of t
